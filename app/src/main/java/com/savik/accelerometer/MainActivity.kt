@@ -21,9 +21,9 @@ class MainActivity : AppCompatActivity() {
         val sListener = object : SensorEventListener{
             override fun onSensorChanged(sEvent: SensorEvent?) {
                 val value = sEvent?.values
-                var x: Double = value?.get(0)!! * 9.31
-                var y: Double = value?.get(1)!! * 9.31
-                var z: Double = value?.get(2)!! * 9.3
+                var x: Double = value?.get(0)!! * 9.17
+                var y: Double = value?.get(1)!! * 9.17
+                var z: Double = value?.get(2)!! * 9.17
                 val sData = "X: ${x.toInt()}\nY: ${y.toInt()}\nZ: ${z.toInt()}"
                 tvSensor.setText(sData)
             }
